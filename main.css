@@ -1,0 +1,143 @@
+main {
+  padding-top:0px;
+}
+
+main .row {
+  margin-top:;
+}
+
+.box {
+  height:;
+  text-align: center;
+ /* padding-top: 3px;*/
+  align-items:center;
+  padding-left:18px;
+  padding-right:18px;
+  
+  
+}
+
+.box img{
+  height:auto;width:100%;
+ /* height:240px;*/
+  background-color:#707070;
+  border-radius:11px;
+  box-shadow:3px 3px 5px #8c8c8c;
+  background-size:contain;
+  margin-top:0;aspect-ratio: 3 / 4;
+}
+.icn{
+  display:flex;
+  justify-content:space-evenly;
+}
+
+
+.ico{
+  font-size:35px;
+  padding-top:20px;
+}
+
+
+
+
+.container {
+  overflow:hidden;
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+#myBtnContainer{
+  justify-content:space-evenly;
+  padding: 10px;
+  
+}
+  
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius:14px;
+  width:88px;
+  margin:15px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+      }
+
+@media only screen and (max-width:600px) {
+
+.box{
+padding-left:10px;
+  padding-right:10px;
+}
+  
+.box img{
+  /*height:200px;*/
+}
+main .container .col-3{
+ /* height:200px;*/
+  }
+.swiper .swiper-button-next ,
+.swiper .swiper-button-prev{
+  display:none;
+}
+  
+ }
+
+/**swiper js**/
+
+.contain{
+  width:100%:
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero .contain .swiper {
+  width:95%;
+  height:fit-content;
+}
+.swiper-slide img{
+  width:100%;
+}
+.swiper .swiper-button-next ,
+.swiper .swiper-button-prev 
+{
+  color:white ;
+  
+}
+.swiper .swiper-pagination-bullet-active
+{
+background-color:#ffffff;
+}
+
+
+/**anchor blue remove**/
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}

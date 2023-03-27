@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing:border-box;
+}
+
+body{
+  background-size:contain;
+  font-family: 'Poppins', sans-serif;
+  height:100%;
+  position:relative;
+  background-color: #333333;
+  color: #ffffff;
+}
+#preload{
+background:#000000 url("https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif") no-repeat center ;
+ background-size:15%;
+ height:100vh;
+  width:100%;
+  top:0;
+  position:fixed;
+  z-index:100;
+}
+#back-btn{
+ padding-left:4px; position:fixed; width:100%; 
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);top:0;
+  background-color:transparent;
+ /*display:flex;
+ justify-content:space-between;*/
+  align-items:center;
+  text-align: center;
+  height:55px;
+
+}
+
+.arrow-btn{
+  font-size:44px;color: white;
+  padding-top:4px;
+  position:absolute;
+  top:0;
+  left:20px;
+}
+h1{
+  padding-top:5px;
+  padding-right:;
+  color:red;
+  
+}
+
+section{
+  width:100%;
+}
+
+.her main .container .col-3{
+  float:left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  padding-bottom:0;
+  /**load-more**/
+  width:50%;
+  height:250px;
+  margin-bottom:20px;
+  font-size:12px;
+}
+
+main {
+  padding-top:0px;
+}
+
+main .row {
+  margin-top:57px;
+  overflow:hidden;
+}
+.row {
+  max-width: 1000px;
+  padding-left:20px;
+  padding-right:20px;
+  margin:0 auto;
+}
+
+/* Clearfix */
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.box {
+  height:;
+  text-align: center;
+ /* padding-top: 3px;*/
+  align-items:center;
+  padding-left:10px;
+  padding-right:10px;
+}
+.box img{
+  height:auto;width:100%;
+  height:240px;
+  background-color:#707070;
+  border-radius:11px;
+  box-shadow:3px 3px 5px #8c8c8c;
+  background-size:contain;
+  margin-top:0;
+}
+
+  
+.footer{
+  background-color:black;
+  width:100%;
+  color:whitesmoke;
+  text-align:center;
+  margin-top:0;
+}
+
+.icn{
+  display:flex;
+  justify-content:space-evenly;
+}
+
+
+.ico{
+  font-size:35px;
+  padding-top:20px;
+}
+
+
+
+@media only screen and (max-width:600px) {
+
+.box img{
+  height:200px;
+}
+.her main .container .col-3{
+  height:200px;
+  }
+}
+
+@media only screen and (min-width:620px) {
+
+.her main .container .col-3 {
+    width:25%;
+  
+  }
+
+}
+
+/**anchor blue remove**/
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+
+
+
+
+
+
+
