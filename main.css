@@ -31,55 +31,15 @@ main .row {
   justify-content:space-evenly;
 }
 
-
 .ico{
   font-size:35px;
   padding-top:20px;
 }
 
-
-
-
 .container {
   overflow:hidden;
 }
 
-.filterDiv {
-  display: none; /* Hidden by default */
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-#myBtnContainer{
-  justify-content:space-evenly;
-  padding: 10px;
-  
-}
-  
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  border-radius:14px;
-  width:88px;
-  margin:15px;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
-      }
 
 @media only screen and (max-width:600px) {
 

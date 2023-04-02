@@ -47,13 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/** dark mode */
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
 
-
-}
 
 
 //swiper js//

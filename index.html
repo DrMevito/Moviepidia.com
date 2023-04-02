@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#333333">
+    <meta name="theme-color" content="#181818">
     
       
     
     <title>Moviepidia</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="Logo.svg"/>
     
     <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
+    
+
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="float.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" />
@@ -21,7 +23,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     
   </head>
   <body>
-    <div id='preload'></div>
+    
+    <div id='preload'>
+      <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    
 	<nav class="navbar">
   <h1 class="logo">Moviepidia</h1>
     
@@ -31,13 +37,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     
 		<ul class="elements">
 
-<li class="nav-el"><a  href= "#" class="navl noSelect  ">Home</a></li>
+<li class="nav-el"><a  href= "/" class="navl noSelect  ">Home</a></li>
       
-<li class="nav-el"><a href= "#" class="navl noSelect">Contact</a></li>
+<li class="nav-el"><a href= "#marvel" class="navl noSelect">Marvel</a></li>
       
-<li class="nav-el"><a href= "#about" class="navl noSelect">About</a></li>
+<li class="nav-el"><a href= "#action" class="navl noSelect">Action</a></li>
       
-<li class="nav-el"><a href= "#menu" class="navl noSelect">News</a></li>
+<li class="nav-el"><a href= "#horror&thriller" class="navl noSelect">Horror&thriller</a></li>
+      
+<li class="nav-el"><a href= "#comedy" class="navl noSelect">Comedy</a></li>
+      
+<li class="nav-el"><a href= "#drama" class="navl noSelect">Drama</a></li>
+
+<li class="nav-el"><a href= "#sci-fi" class="navl noSelect">Sci-fi</a></li>
       
 		</ul>
     
@@ -84,34 +96,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
    </div>
    </div>
    
-  
-   <!--<div id="srch">
-<input id="searchbar" onkeyup="search_animal()" type="text"
 
-        name="search" placeholder="Search.."> 
     
-    <button class="scbtn" type="submit">
-
-    <i class='bx bx-search'></i>
-    </button>
-    </div> -->
    
- <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('action')"> Action</button>
-  <button class="btn" onclick="filterSelection('horror')"> Horror</button>
-  <button class="btn" onclick="filterSelection('funny')"> Funny</button>
-  <button class="btn" onclick="filterSelection('sci-fi')"> Sci-fi</button>
-  <button class="btn" onclick="filterSelection('thriller')"> Thriller</button> 
-  </div>
-
-    
-   <!--- <button style="border-radius:12px;padding:8px;"
-    onclick="myFunction()">
-DARK MODE 
-    </button> --->
-
-
 
     
 </section>
@@ -120,7 +107,7 @@ DARK MODE
   
   <main role="main">
 
-    <div class="row container">
+    <div id='latest' class="row container">
 
     
  <div class='row-title'>
@@ -129,8 +116,8 @@ DARK MODE
 
 <div class="col-3">
   <div class="box">
-  <a  class='noSelect' href="movies/Tjmm.html"><img 
-                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCmVlkdCwYNqBVkNIQUFkGInwWfLJu4Hd3g&usqp=CAU">
+  <a  class='noSelect' href="movies/Bheed.html"><img 
+                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnPMjubcp6nKNct6IJprkHU1oBIqCS32TsXQ&usqp=CAU">
 </a>
  </div>
 </div>
@@ -138,8 +125,8 @@ DARK MODE
       
       <div class="col-3">
         <div class="box">
-          <a class='noSelect'   href="movies/Selfiee.html"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7P0NSlgEqdwhQclhCUmTymRuunZMN_QP5hA&usqp=CAU "></a>
-     
+      <a class='noSelect'   href="movies/Chor-nikal-ke-bhaga.html">
+  <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aoqlmfxacp2x554XloZnid0vDX7caBeylJfeHwBnaNTEMi6s9GF36-Js&s=10"></a>
         </div>
       </div>
 
@@ -147,10 +134,9 @@ DARK MODE
       <div class="col-3">
         <div class="box">
     <a class='noSelect'
-href="movies/pathaan.html">
-<img   class='lazy' data-src="https://gallery.drmevito.repl.co/pathaan.jpeg"></a>
-    
-        </div>
+href="movies/Zwigato.html">
+<img src="https://m.media-amazon.com/images/M/MV5BNjQwYTAyOWEtODBmMS00NDY2LWJmMGQtNzAxNzdjNDUzZjRiXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg"></a>
+    </div>
       </div>
 
       
@@ -159,7 +145,8 @@ href="movies/pathaan.html">
       
       <div class="col-3">
         <div class="box">
-          <a class='noSelect'      href="./movies/Shehzada.html"><img class='lazy' data-src= "   https://gallery.drmevito.repl.co/shehzada.jpeg"></a>
+          <a class='noSelect'      href="./movies/Tjmm.html">
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDXGjzERmuH8h34CHTBYHwiXoJh4rParEUdBIc7DKUMIytVfNzIE4Tdk9&s=10"></a>
    
         </div>
       </div>
@@ -167,7 +154,7 @@ href="movies/pathaan.html">
       
  </div><!--container-->
 
-    <div class="row container">
+    <div id='marvel' class="row container">
 
  <div class='row-title'>
     <h1>Marvel</h1>
@@ -214,10 +201,10 @@ href='./movies/Blackpanther2.html '>
      </div>
 
 
-</div><!--container-->
+</div><!--container Marvel-->
     
 
-<div class="row container">
+<div id='action'  class="row container">
 
   <div class='row-title'>
     <h1>Action</h1>
@@ -234,7 +221,15 @@ href="movies/pathaan.html">
     
    </div>
 </div>
-
+  
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/Shehzada.html">
+<img   class='lazy' data-src="https://gallery.drmevito.repl.co/shehzada.jpeg"></a>
+    
+   </div>
+</div>
 
 
 <div class="col-3" >
@@ -247,7 +242,133 @@ href="movies/pathaan.html">
 
       
 
-</div><!--container-->
+</div><!--container action-->
+
+
+    <div id='horror&thriller' class="row container">
+
+  <div class='row-title'>
+    <h1>Horror&thriller</h1>
+<a  class='noSelect'  href='./catagory/horror&thriller.html'><h3>more</h3></a>
+  </div> 
+
+
+  
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/Chor-nikal-ke-bhaga.html">
+<img   class='lazy' data-src="https://gallery.drmevito.repl.co/chor-nikal-ke-bhaga.jpeg"></a>
+   </div>
+</div>
+
+
+
+<div class="col-3" >
+        <div class="box">
+<a class='noSelect' href="./movies/Mission-m.html">
+  <img class="lazy" data-src= "https://gallery.drmevito.repl.co/      .jpeg"></a>
+  </div>
+</div>
+
+</div><!--container horror-->
+
+<div id='comedy' class="row container">
+
+  <div class='row-title'>
+    <h1>comedy</h1>
+<a  class='noSelect'  href='./catagory/comedy.html'><h3>more</h3></a>
+  </div> 
+
+
+  
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/Selfiee.html">
+<img   class='lazy' data-src="https://gallery.drmevito.repl.co/selfiee.jpeg"></a>
+    
+   </div>
+</div>
+  
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/Tjmm.html">
+<img  class='lazy' data-src="https://gallery.drmevito.repl.co/tjmm.jpeg"></a>
+   </div>
+</div>
+
+
+<div class="col-3" >
+        <div class="box">
+<a class='noSelect' href="./movies/Mission-m.html">
+  <img class="lazy" data-src= "https://gallery.drmevito.repl.co/      .jpeg"></a>
+    
+  </div>
+</div>
+
+</div><!--container comedy-->
+
+<div id='drama' class="row container">
+
+  <div class='row-title'>
+    <h1>Drama</h1>
+<a  class='noSelect'  href='./catagory/drama.html'><h3>more</h3></a>
+  </div> 
+
+<div class="col-3" >
+        <div class="box">
+<a class='noSelect' href="./movies/Bheed.html">
+  <img class="lazy" data-src= "https://gallery.drmevito.repl.co/bheed.jpeg"></a>
+  </div>
+</div>
+  
+
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/Zwigato.html">
+<img   class='lazy' data-src="https://gallery.drmevito.repl.co/zwigato.jpeg"></a>
+    </div>
+      </div>
+
+      
+
+</div><!--container drama-->
+
+<div id='sci-fi' class="row container">
+
+  <div class='row-title'>
+    <h1>Sci-fi</h1>
+<a  class='noSelect'  href='./catagory/sci-fi.html'><h3>more</h3></a>
+  </div> 
+
+
+  
+<div class="col-3">
+        <div class="box">
+    <a class='noSelect'
+href="movies/pathaan.html">
+<img   class='lazy' data-src="https://gallery.drmevito.repl.co/.jpeg"></a>
+    
+   </div>
+</div>
+
+
+
+<div class="col-3" >
+        <div class="box">
+<a class='noSelect' href="./movies/Mission-m.html">
+  <img class="lazy" data-src= "https://gallery.drmevito.repl.co/      .jpeg"></a>
+    
+  </div>
+</div>
+
+</div><!--container sci-fi-->
+
+
+    
   </main>
  </section>
 
@@ -264,21 +385,22 @@ href="movies/pathaan.html">
     <footer class= "footer">
       <div class="icn">
     
-<a href='https://sbbrisk.com/d/xtaw8k76qmsl'><i class='bx ico bxl-youtube' style='color:#ff0000'></i></a>
+<i class='bx ico bxl-youtube' style='color:#ff0000'></i>
     
   
-      
       <i class='bx ico bxl-instagram' style='color:#ff1899'></i>
     
       
 <i class='bx ico bxl-facebook-circle' style='color:#1d6bf3'  ></i>
     
-      <i class='bx ico bxl-twitter' style='color:rgba(17,230,255,0.92)' ></i></div>
+      <i class='bx ico bxl-twitter' style='color:rgba(17,230,255,0.92)' ></i>
+      </div>
   </br>
   </br>
      <p>copyright:@dev</p>
 
     </footer>
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       
 	<script src="script.js"></script>
