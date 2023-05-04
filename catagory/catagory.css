@@ -9,7 +9,7 @@ body{
   font-family: 'Poppins', sans-serif;
   height:100%;
   position:relative;
-  background-color: #333333;
+  background-color: #181818;
   color: #ffffff;
 }
 #preload{
@@ -109,14 +109,22 @@ main .row {
   background-size:contain;
   margin-top:0;
 }
-
+p{
+  font-size:20px;
+  padding:2% 5%;
+}
   
 .footer{
-  background-color:black;
   width:100%;
   color:whitesmoke;
   text-align:center;
   margin-top:0;
+}
+.footer p{
+  align-items:center;
+  font-size:12px;
+  padding-top:5px;
+  padding-bottom:10px;
 }
 
 .icn{
@@ -124,12 +132,11 @@ main .row {
   justify-content:space-evenly;
 }
 
-
 .ico{
   font-size:35px;
-  padding-top:20px;
+  padding-top:10px;
+  padding-bottom:5px;
 }
-
 
 
 @media only screen and (max-width:600px) {
