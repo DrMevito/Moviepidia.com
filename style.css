@@ -155,17 +155,15 @@ width:100%;
   display:flex;
   justify-content:space-between;
   padding-right:;
-  background-color:#212121;
+  background-color:#181818;
   color:white;
   /*box-shadow:6px 6px 6px 6px #212121;*/
   align-items:center;
   top:0;
   padding:10px 2%;
-  
   position:fixed;
- z-index:9;
+  z-index:9;
   width:100%;
-   
 }
 
 
@@ -226,7 +224,7 @@ section{
   background-repeat: no-repeat; 
 	background-position: center; 
   background-size: cover;
-  margin-top:65px;
+  margin-top:60px;
   text-align:center;
 }
 .hero img{
@@ -237,9 +235,29 @@ section{
   
 }
 .he{
-  height:;
+  padding:20px;
+  margin-bottom:20px;
 }
-
+.g-he{
+  position:relative;
+  background:#121212;
+ border-radius:5px;
+  text-align:justify;
+  font-size:20px;
+  inline-height:32px;
+  color:#aaaaaa;
+}
+.g-he::before,.g-he::after{
+  content:"";
+  position:absolute;
+  inset:-0.5rem;
+  z-index:-1;
+  background-image:linear-gradient(45deg,red,blue);
+  border-radius:inherit;
+}
+.g-he::after {
+  filter:blur(30px);
+}
 .content{
   margin:10px auto;
   text-align:center;
@@ -252,14 +270,18 @@ padding-top:2%;
 p{
   font-size:20px;
   padding:2% 5%;
-  text-align:;
 }
 .footer{
-  background-color:black;
   width:100%;
   color:whitesmoke;
   text-align:center;
   margin-top:0;
+}
+.footer p{
+  align-items:center;
+  font-size:12px;
+  padding-top:5px;
+  padding-bottom:10px;
 }
 
 
@@ -267,6 +289,7 @@ p{
 	.elements {
 		flex-direction:column;
   background-color:rgba(0,0,0,0.2);
+    
 		align-items:center;
 		position:fixed;
     justify-content:space-evenly;
